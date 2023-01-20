@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Recipe details</title>
 </head>
 <body>
-$END$
+  <h1>Detail of recipe</h1>
+  <h2 th:text="'Name: ' + ${recipe.recipeName}"></h2>
+  <h3 th:text="'Category: ' + ${recipe.category}"></h3>
+  <h3 th:text="'Cooking time: ' + ${recipe.cookingTime}"></h3>
+  <h3 th:text="'Ingredients: ' + ${recipe.ingredients}"></h3>
+  <h3 th:text="'Instructions: ' + ${recipe.instructions}"></h3>
+
 </body>
 </html>

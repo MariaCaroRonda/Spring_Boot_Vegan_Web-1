@@ -9,3 +9,5 @@ public class SpringBootVeganWeb1Application {
   public static void main(String[] args) {
     SpringApplication.run(SpringBootVeganWeb1Application.class, args);
   }
+
+}

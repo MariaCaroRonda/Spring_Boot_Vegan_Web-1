@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+  xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Home Page</title>
 </head>
 <body>
-$END$
+<!--  <h1>Welcome to Go Green Vegan Recipes App</h1>-->
+<!--  <h1 th:text="${message}"></h1>-->
+<!--  <h2>Hoy es [[${date}]]</h2>-->
+
+  <h1>Welcome to GoGreen Vegan Recipes</h1>
+  <h2>Recipe</h2>
+  <h3 th:text="'Name: ' + ${name}"></h3>
+  <h3 th:text="'Published on: ' + ${date}"></h3>
+  <h3 th:text="'Ingredients: ' + ${ingredients}"></h3>
+  <h3 th:text="'Category: ' + ${category}"></h3>
+  <h3 th:text="'Cooking time: ' + ${cookingTime}"></h3>
+  <h3 th:text="'Instructions: ' + ${instructions}"></h3>
+  <h3 th:text="'Featured: ' + ${featured}"></h3>
 </body>
 </html>
