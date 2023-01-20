@@ -87,6 +87,7 @@ public class HomeController {
       recipe1.setInstructions("Mix ingredients. Cook for 2 minutes, flip over and cook for 2 minutes.");
       recipe1.setPublicationDate(sdf.parse("08-02-2022"));
       recipe1.setFeatured(1);
+      recipe1.setImage("blueberry-banana-pancakes.png");
 
       Recipe recipe2 = new Recipe();
       recipe2.setRecipeId(2);
@@ -98,6 +99,7 @@ public class HomeController {
         "Use your hands to shape the mixture into burger shapes. Fry them with a little oil ");
       recipe2.setPublicationDate(sdf.parse("09-02-2022"));
       recipe2.setFeatured(0);
+      //recipe2.setImage("beetroot-burger.png");
 
       Recipe recipe3 = new Recipe();
       recipe3.setRecipeId(3);
@@ -110,6 +112,7 @@ public class HomeController {
         "Bake for 35-45 minutes.");
       recipe3.setPublicationDate(sdf.parse("10-02-2022"));
       recipe3.setFeatured(0);
+      recipe3.setImage("brownies.png");
 
       Recipe recipe4 = new Recipe();
       recipe4.setRecipeId(4);
@@ -120,6 +123,7 @@ public class HomeController {
       recipe4.setInstructions("Mix natural yogurt, oats, ground almonds and seeds. Leave it overnight in the fridge.");
       recipe4.setPublicationDate(sdf.parse("11-02-2022"));
       recipe4.setFeatured(1);
+      recipe4.setImage("chia-almond-overnight-oats.png");
 
       list.add(recipe1);
       list.add(recipe2);

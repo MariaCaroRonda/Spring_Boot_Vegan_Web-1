@@ -70,13 +70,20 @@ public class Recipe {
     this.featured = featured;
   }
 
-
   public Date getPublicationDate() {
     return publicationDate;
   }
 
   public void setPublicationDate(Date publicationDate) {
     this.publicationDate = publicationDate;
+  }
+
+  public String getImage() {
+    return image;
+  }
+
+  public void setImage(String image) {
+    this.image = image;
   }
 
   @Override
@@ -90,6 +97,7 @@ public class Recipe {
       ", instructions='" + instructions + '\'' +
       ", featured=" + featured +
       ", publicationDate=" + publicationDate +
+      ", image='" + image + '\'' +
       '}';
   }
 }
