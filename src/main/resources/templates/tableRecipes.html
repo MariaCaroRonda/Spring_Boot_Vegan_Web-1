@@ -26,6 +26,7 @@
         <th>Instructions</th>
         <th>Featured</th>
         <th>Publication Date</th>
+        <th>Detail</th>
       </tr>
     </thead>
     <tr th:each="tmpRecipe : ${recipeList}">
@@ -42,15 +43,15 @@
       <td th:text="${tmpRecipe.instructions}"></td>
 <!--      <td th:text="${tmpRecipe.featured}"></td>-->
 <!--      <td th:text="${tmpRecipe.featured == 1 ? 'Yes' : 'No'}"></td>-->
-
       <td>
-
         <span th:if="${tmpRecipe.featured == 1}" class="badge badge-success">Yes</span>
         <span th:unless="${tmpRecipe.featured == 1}" class="badge badge-danger">No</span>
-
       </td>
-
       <td th:text="${tmpRecipe.publicationDate}"></td>
+      <td>
+        <a th:href="@{/recipes/view/{tmpId} (tmpId=${tmpRecipe.recipeId}) }"
+           class="btn btn-success">Detail</a>
+      </td>
     </tr>
 
   </table>
