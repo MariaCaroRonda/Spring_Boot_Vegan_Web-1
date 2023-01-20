@@ -27,6 +27,7 @@
         <th>Featured</th>
         <th>Publication Date</th>
         <th>Detail</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tr th:each="tmpRecipe : ${recipeList}">
@@ -51,6 +52,10 @@
       <td>
         <a th:href="@{/recipes/view/{tmpId} (tmpId=${tmpRecipe.recipeId}) }"
            class="btn btn-success">Detail</a>
+      </td>
+      <td>
+        <a th:href="@{/recipes/delete(id=${tmpRecipe.recipeId}) }"
+           class="btn btn-danger">Delete</a>
       </td>
     </tr>
 
