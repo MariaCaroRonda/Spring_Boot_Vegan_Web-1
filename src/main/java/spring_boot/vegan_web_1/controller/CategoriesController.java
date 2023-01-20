@@ -2,12 +2,14 @@ package spring_boot.vegan_web_1.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
+@RequestMapping(value = "/categories")
 public class CategoriesController {
+
+  //@RequestMapping on Methods
 
   // @GetMapping("/index")
   @RequestMapping(value = "/index", method = RequestMethod.GET)
@@ -27,3 +29,4 @@ public class CategoriesController {
     return "categories/listCategories";
   }
 }
+
